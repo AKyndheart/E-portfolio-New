@@ -17,6 +17,9 @@ p {
     line-height: 1.5;
     font-size: 16px;
 }
+a {
+    text-decoration: none;
+}
 li {
     list-style-type: none;
 }
@@ -26,7 +29,7 @@ li {
 .flex-1 {
     flex: 1;
 }
-.row {
+.row__tech-stack, .row__projects {
     width: 100%;
     max-width: 800px;
 }
@@ -187,6 +190,14 @@ nav {
 
 /* PROJECTS */
 
+.project {
+margin-bottom: 135px;
+}
+
+.project:last-child {
+    margin-bottom: 40px;
+}
+
 .project__img {
     width: 100%;
     transition: all 450ms ease;
@@ -233,4 +244,63 @@ nav {
 .project__description--para {
     text-align: center;
     color: white;
+}
+
+
+
+/* FOOTER*/
+
+footer {
+    background-color: #3d3b44;
+}
+
+.footer__logo--image {
+    width: 140px;
+    height: 140px;
+}
+
+.row__footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 8% 0;
+}
+
+.footer__copyright {
+    color: white;
+}
+
+.footer__social--list {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 28px;
+}
+
+.footer__social--link {
+    color: white;
+    margin: 0, 40px;
+}
+
+.footer__anchor {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.footer__logo--popper {
+    color: white;
+    position: absolute;
+    right: 0px;
+    top: 50px;
+    font-weight: 700;
+    opacity: 0;
+    transition: all 300ms ease;
+}
+
+.footer__anchor:hover .footer__logo--popper {
+    transform: translateX(60px);
+    opacity: 1;
+
 }
