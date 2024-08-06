@@ -326,9 +326,10 @@ margin-bottom: 135px;
 .project__description {
     position: absolute;
     top: 35%;
-    left: 190px;
+    left: 290px;
     transform:translate(-50%);
     max-width: 550px;
+    z-index: 3;
 }
 .project__description--title, 
 .project__description--sub-title,
